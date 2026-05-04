@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Empresa Minera en Pasco</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: white;
+            background-image: url('https://images.unsplash.com/photo-1581093588401-22c2f1a8d0c7');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        /* Menú */
+        nav {
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav .logo {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Contenido */
+        .overlay {
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 40px;
+            min-height: 100vh;
+        }
+
+        header {
+            text-align: center;
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        section {
+            max-width: 800px;
+            margin: auto;
+        }
+
+        h2 {
+            border-bottom: 2px solid white;
+            padding-bottom: 5px;
+        }
+
+        /* Login */
+        .login-box {
+            max-width: 300px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+        }
+
+        .login-box input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .login-box button {
+            width: 100%;
+            padding: 10px;
+            background-color: #00aaff;
+            border: none;
+            color: white;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .login-box button:hover {
+            background-color: #0088cc;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <div class="logo">Minera Pasco</div>
+    <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Empresa</a></li>
+        <li><a href="#">Contacto</a></li>
+        <li><a href="#login">Login</a></li>
+    </ul>
+</nav>
+
+<div class="overlay">
+
+    <header>Empresa Minera Pasco S.A.</header>
+
+    <section>
+        <h2>¿Quiénes somos?</h2>
+        <p>
+            Somos una empresa minera ubicada en Pasco, Perú, dedicada a la exploración,
+            extracción y procesamiento de minerales.
+        </p>
+
+        <h2>Misión</h2>
+        <p>
+            Desarrollar minería responsable respetando el medio ambiente.
+        </p>
+
+        <h2>Visión</h2>
+        <p>
+            Ser líderes en el sector minero con innovación y sostenibilidad.
+        </p>
+    </section>
+
+    <!-- Login -->
+    <div id="login" class="login-box">
+        <h2>Iniciar Sesión</h2>
+        <form>
+            <input type="text" placeholder="Usuario" required>
+            <input type="password" placeholder="Contraseña" required>
+            <button type="submit">Ingresar</button>
+        </form>
+    </div>
+
+    <footer>
+        © 2026 Empresa Minera Pasco S.A.
+    </footer>
+
+</div>
+
+</body>
+</html>
